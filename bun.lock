@@ -24,7 +24,7 @@
         "ziggy-js": "^2.5.3",
       },
       "devDependencies": {
-        "@ozmos/vite-plugin-viper": "~0.1.2",
+        "@ozmos/vite-plugin-viper": "~0.2.0",
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.8.2",
         "concurrently": "^9.0.1",
@@ -121,7 +121,7 @@
 
     "@ozmos/viper-vue": ["@ozmos/viper-vue@0.1.1", "", { "dependencies": { "@tanstack/vue-query": "^5.77.2", "vue": "^3.5.14", "vue-router": "^4.5.1" } }, "sha512-sb/P/2SM/zwLICEULOBYIZ6a/cLgsyBfi5s1LF005uQcH7PZHkP+RDFYJVMmztmxjmgVy+RI/ZFVTkfAPyVQ9g=="],
 
-    "@ozmos/vite-plugin-viper": ["@ozmos/vite-plugin-viper@0.1.2", "", { "dependencies": { "@types/node": "^22.15.19", "typescript": "^5.8.3", "vite": "^6.3.5" } }, "sha512-B71aKbO6XLllElsCq9+UwBXjlDHArLeBsdFsTWqY0lz1H1uAmo0sgcYdlonTLUTqAuNs90bN5S0B200hfWfURg=="],
+    "@ozmos/vite-plugin-viper": ["@ozmos/vite-plugin-viper@0.2.0", "", { "dependencies": { "@types/node": "^22.15.19", "typescript": "^5.8.3", "vite": "^6.3.5" } }, "sha512-yJu2J+2oy2ZayfXTb7cB6pzY9/Dk10GKY1+dzf81HGr78pkpCtg01fN8zR4a3KPjap8uYQOnqSkeY1hk07aXsw=="],
 
     "@prettier/plugin-php": ["@prettier/plugin-php@0.22.4", "", { "dependencies": { "linguist-languages": "^7.27.0", "php-parser": "^3.1.5" }, "peerDependencies": { "prettier": "^3.0.0" } }, "sha512-uZWqfyrwsxScIYkmVcfnoQGFmKVMXTHD5pqYT4l8fxzm5P3XY94hTPbf8X6TFCi2QTZBIot7GS8lfIjQjldc2g=="],
 

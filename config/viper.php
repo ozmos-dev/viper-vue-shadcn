@@ -8,5 +8,7 @@ return [
 
   // sfc -> <php> tag inside vue files
   // adjacent -> php files directly next to vue files ie js/pages/login.vue and js/pages/login.php
-  'mode' => 'sfc',
+  'mode' => 'adjacent',
+
+  'framework' => 'vue',
 ];

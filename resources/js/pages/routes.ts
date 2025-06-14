@@ -6,16 +6,16 @@ export interface RouteNamedMap {
         'Layout': RouteRecordInfo<'Layout', '/', Record<never, never>, Record<never, never>, never>;
         'Index': RouteRecordInfo<'Index', '/', Record<never, never>, Record<never, never>, never>;
         'AppGroupLayout': RouteRecordInfo<'AppGroupLayout', '/', Record<never, never>, Record<never, never>, never>;
-        'AppGroupHome': RouteRecordInfo<'AppGroupHome', '/home', Record<never, never>, Record<never, never>, never>;
+        'AppGroupHome': RouteRecordInfo<'AppGroupHome', 'home', Record<never, never>, Record<never, never>, never>;
         'AuthGroupLayout': RouteRecordInfo<'AuthGroupLayout', '/', Record<never, never>, Record<never, never>, never>;
-        'AuthGroupLogin': RouteRecordInfo<'AuthGroupLogin', '/login', Record<never, never>, Record<never, never>, never>;
-        'AuthGroupRegister': RouteRecordInfo<'AuthGroupRegister', '/register', Record<never, never>, Record<never, never>, never>;
-        'AppGroupProfileLayout': RouteRecordInfo<'AppGroupProfileLayout', '/profile/', Record<never, never>, Record<never, never>, never>;
-        'AppGroupProfileIndex': RouteRecordInfo<'AppGroupProfileIndex', '/profile/', Record<never, never>, Record<never, never>, never>;
-        'AppGroupProfilePassword': RouteRecordInfo<'AppGroupProfilePassword', '/profile/password', Record<never, never>, Record<never, never>, never>;
-        'AuthGroupForgotPassword': RouteRecordInfo<'AuthGroupForgotPassword', '/forgot-password', Record<never, never>, Record<never, never>, never>;
-        'AppGroupProfileAppearance': RouteRecordInfo<'AppGroupProfileAppearance', '/profile/appearance', Record<never, never>, Record<never, never>, never>;
-        'AuthGroupResetPasswordTokenParam': RouteRecordInfo<'AuthGroupResetPasswordTokenParam', '/reset-password/:token', {'token': string}, {'token': string}, never>;
+        'AuthGroupLogin': RouteRecordInfo<'AuthGroupLogin', 'login', Record<never, never>, Record<never, never>, never>;
+        'AuthGroupRegister': RouteRecordInfo<'AuthGroupRegister', 'register', Record<never, never>, Record<never, never>, never>;
+        'AppGroupProfileLayout': RouteRecordInfo<'AppGroupProfileLayout', 'profile', Record<never, never>, Record<never, never>, never>;
+        'AppGroupProfileIndex': RouteRecordInfo<'AppGroupProfileIndex', 'profile', Record<never, never>, Record<never, never>, never>;
+        'AppGroupProfilePassword': RouteRecordInfo<'AppGroupProfilePassword', 'profile/password', Record<never, never>, Record<never, never>, never>;
+        'AuthGroupForgotPassword': RouteRecordInfo<'AuthGroupForgotPassword', 'forgot-password', Record<never, never>, Record<never, never>, never>;
+        'AppGroupProfileAppearance': RouteRecordInfo<'AppGroupProfileAppearance', 'profile/appearance', Record<never, never>, Record<never, never>, never>;
+        'AuthGroupResetPasswordTokenParam': RouteRecordInfo<'AuthGroupResetPasswordTokenParam', 'reset-password/:token', {'token': string}, {'token': string}, never>;
 };
 
 const routes = [
