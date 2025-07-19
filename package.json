@@ -6,7 +6,7 @@
     "dev": "vite"
   },
   "devDependencies": {
-    "@ozmos/vite-plugin-viper": "~0.2.0",
+    "@ozmos/vite-plugin-viper": "~0.3.0",
     "@tailwindcss/vite": "^4.0.0",
     "axios": "^1.8.2",
     "concurrently": "^9.0.1",
@@ -15,7 +15,7 @@
     "vite": "^6.2.4"
   },
   "dependencies": {
-    "@ozmos/viper-vue": "~0.1.1",
+    "@ozmos/viper-vue": "~0.3.0",
     "@prettier/plugin-php": "^0.22.4",
     "@tanstack/vue-query": "^5.77.2",
     "@types/nprogress": "^0.2.3",

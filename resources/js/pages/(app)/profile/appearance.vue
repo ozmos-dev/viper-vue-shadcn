@@ -15,6 +15,7 @@
 import Heading from '@/components/Heading.vue';
 import { useBreadcrumb } from '@/pages/(app)/_layout.vue';
 import AppearanceTabs from '@/components/AppearanceTabs.vue';
+import { route } from '@/pages/routes';
 
-useBreadcrumb({ id: 'appearance', label: 'Appearance' });
+useBreadcrumb({ label: 'Appearance', href: route('profile.appearance') });
 </script>
