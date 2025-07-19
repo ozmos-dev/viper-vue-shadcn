@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "153fcfd6f7622ce23e4c277d9238a19f",
+    "content-hash": "694f77efc916584f21ebf4eac53d4fc8",
     "packages": [
         {
             "name": "brick/math",
@@ -7377,16 +7377,16 @@
         },
         {
             "name": "ozmos/viper",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ozmos-dev/viper.git",
-                "reference": "1a56551b98c95ac772c242e74611d2b021efe0ed"
+                "reference": "f99282110e67aaf9c8efb621265028bb59ed0ade"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ozmos-dev/viper/zipball/1a56551b98c95ac772c242e74611d2b021efe0ed",
-                "reference": "1a56551b98c95ac772c242e74611d2b021efe0ed",
+                "url": "https://api.github.com/repos/ozmos-dev/viper/zipball/f99282110e67aaf9c8efb621265028bb59ed0ade",
+                "reference": "f99282110e67aaf9c8efb621265028bb59ed0ade",
                 "shasum": ""
             },
             "require": {
@@ -7443,9 +7443,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ozmos-dev/viper/issues",
-                "source": "https://github.com/ozmos-dev/viper/tree/v0.3.0"
+                "source": "https://github.com/ozmos-dev/viper/tree/v0.3.1"
             },
-            "time": "2025-07-19T23:36:02+00:00"
+            "time": "2025-07-19T23:51:00+00:00"
         },
         {
             "name": "phar-io/manifest",
