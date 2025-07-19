@@ -42,12 +42,12 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
 import { useBreadcrumb } from '@/pages/(app)/_layout.vue';
-import { router } from '@/pages/routes';
+import { route, router } from '@/pages/routes';
 import { Button } from '@/components/ui/button';
 import Heading from '@/components/Heading.vue';
 import { Separator } from '@/components/ui/separator';
 
-useBreadcrumb({ id: 'profile', label: 'Profile', href: '/profile' });
+useBreadcrumb({ label: 'Profile', href: route('profile') });
 
 const tabs = [
   { label: 'General', value: 'profile', to: '/profile' },

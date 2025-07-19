@@ -1,11 +1,12 @@
 <?php
 
-use Ozmos\Viper\Attrs;
 use App\Data\Requests\LoginRequest;
 use Illuminate\Validation\ValidationException;
+use Ozmos\Viper\Attrs\Name;
+use Ozmos\Viper\Attrs\Action;
 
-return new #[Attrs\Name('login')] class {
-  #[Attrs\Action]
+return new #[Name('login')] class {
+  #[Action]
   public function login(LoginRequest $request)
   {
     if (!auth()->attempt($request->toArray())) {

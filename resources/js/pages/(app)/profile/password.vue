@@ -36,8 +36,9 @@ import { usePage } from '@ozmos/viper-vue';
 import AppGroupProfilePasswordPage = ViperGen.AppGroupProfilePassword;
 import { toast } from 'vue-sonner';
 import Heading from '@/components/Heading.vue';
+import { route } from '@/pages/routes';
 
-useBreadcrumb({ id: 'change-password', label: 'Change Password' });
+useBreadcrumb({ label: 'Change Password', href: route('profile.password') });
 
 const page = usePage<AppGroupProfilePasswordPage>();
 

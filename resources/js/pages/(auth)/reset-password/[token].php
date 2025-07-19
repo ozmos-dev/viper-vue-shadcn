@@ -1,34 +1,39 @@
 <?php
 
 use Illuminate\Auth\Events\PasswordReset;
-use Ozmos\Viper\Attrs;
 use App\Data\Requests\ResetPasswordRequest;
 use Illuminate\Validation\ValidationException;
+use Ozmos\Viper\Attrs\Name;
+use Ozmos\Viper\Attrs\Prop;
+use Ozmos\Viper\Attrs\Action;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Str;
 
-return new #[Attrs\Name('password.reset')] class {
-  #[Attrs\Prop]
+return new #[Name('password.reset')] class {
+  #[Prop]
   public function email()
   {
     return request()->query('email');
   }
 
-  #[Attrs\Action]
+  #[Action]
   public function resetPassword(ResetPasswordRequest $request, string $token)
   {
-    $status = \Password::reset(
+    $status = Password::reset(
       [...$request->toArray(), 'token' => $token],
       function (\App\Models\User $user, string $password) {
         $user
           ->forceFill([
-            'password' => \Hash::make($password),
+            'password' => Hash::make($password),
           ])
-          ->setRememberToken(\Str::random(60));
+          ->setRememberToken(Str::random(60));
         $user->save();
         event(new PasswordReset($user));
       }
     );
 
-    if ($status === \Password::PASSWORD_RESET) {
+    if ($status === Password::PASSWORD_RESET) {
       return ['message' => __($status)];
     }
 

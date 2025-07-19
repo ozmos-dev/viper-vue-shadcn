@@ -1,13 +1,16 @@
 <?php
 
-return new #[\Ozmos\Viper\Attrs\Name('profile')] class {
-  #[\Ozmos\Viper\Attrs\Action]
+use Ozmos\Viper\Attrs\Name;
+use Ozmos\Viper\Attrs\Action;
+
+return new #[Name('profile')] class {
+  #[Action]
   public function updateUser(\App\Data\Requests\UpdateProfileRequest $request)
   {
     auth()->user()->update($request->toArray());
   }
 
-  #[\Ozmos\Viper\Attrs\Action]
+  #[Action]
   public function deleteUser()
   {
     auth()->user()->delete();

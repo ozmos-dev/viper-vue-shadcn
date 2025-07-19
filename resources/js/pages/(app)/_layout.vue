@@ -44,28 +44,25 @@
 </template>
 
 <script lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue';
+import { onUnmounted, ref } from 'vue';
 
 interface Crumb {
-  label: string;
   id: string;
+  label: string;
   href: string;
 }
 
-const breadcrumbs = ref<Crumb[]>([
-  { id: 'root', href: '/home', label: 'Home' },
-]);
+const breadcrumbs = ref<Crumb[]>([]);
 
-export function useBreadcrumb(crumb: Crumb | Omit<Crumb, 'href'>) {
-  onMounted(() => {
-    breadcrumbs.value.push({
-      href: router?.currentRoute.value.path ?? '#',
-      ...crumb,
-    });
+export function useBreadcrumb(crumb: Omit<Crumb, 'id'>) {
+  const id = Math.random().toString(32).slice(2);
+  breadcrumbs.value.push({
+    ...crumb,
+    id,
   });
 
   onUnmounted(() => {
-    breadcrumbs.value = breadcrumbs.value.filter(x => x.id !== crumb.id);
+    breadcrumbs.value = breadcrumbs.value.filter(x => x.id !== id);
   });
 }
 </script>
@@ -87,7 +84,12 @@ import {
 } from '@/components/ui/sidebar';
 import AppSidebar from '@/components/AppSidebar.vue';
 import { usePage } from '@ozmos/viper-vue';
-import { router } from '@/pages/routes';
+import { router, route } from '@/pages/routes';
+
+useBreadcrumb({
+  label: 'Home',
+  href: route('home'),
+});
 
 const page = usePage<ViperGen.AppGroupLayout>();
 

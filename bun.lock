@@ -3,7 +3,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "@ozmos/viper-vue": "~0.1.1",
+        "@ozmos/viper-vue": "~0.3.0",
         "@prettier/plugin-php": "^0.22.4",
         "@tanstack/vue-query": "^5.77.2",
         "@types/nprogress": "^0.2.3",
@@ -24,7 +24,7 @@
         "ziggy-js": "^2.5.3",
       },
       "devDependencies": {
-        "@ozmos/vite-plugin-viper": "~0.2.0",
+        "@ozmos/vite-plugin-viper": "~0.3.0",
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.8.2",
         "concurrently": "^9.0.1",
@@ -119,9 +119,9 @@
 
     "@jridgewell/trace-mapping": ["@jridgewell/trace-mapping@0.3.25", "", { "dependencies": { "@jridgewell/resolve-uri": "^3.1.0", "@jridgewell/sourcemap-codec": "^1.4.14" } }, "sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ=="],
 
-    "@ozmos/viper-vue": ["@ozmos/viper-vue@0.1.1", "", { "dependencies": { "@tanstack/vue-query": "^5.77.2", "vue": "^3.5.14", "vue-router": "^4.5.1" } }, "sha512-sb/P/2SM/zwLICEULOBYIZ6a/cLgsyBfi5s1LF005uQcH7PZHkP+RDFYJVMmztmxjmgVy+RI/ZFVTkfAPyVQ9g=="],
+    "@ozmos/viper-vue": ["@ozmos/viper-vue@0.3.0", "", { "dependencies": { "@tanstack/vue-query": "^5.77.2", "vue": "^3.5.14", "vue-router": "^4.5.1" } }, "sha512-v9nYR/hD+0Td1z/hNIcbzQMOMf32268a5R3vUhR23gWpiSJCBx3P4FQrZ9B07BpF+jKbQWtrH6Nnr/UM78SiqA=="],
 
-    "@ozmos/vite-plugin-viper": ["@ozmos/vite-plugin-viper@0.2.0", "", { "dependencies": { "@types/node": "^22.15.19", "typescript": "^5.8.3", "vite": "^6.3.5" } }, "sha512-yJu2J+2oy2ZayfXTb7cB6pzY9/Dk10GKY1+dzf81HGr78pkpCtg01fN8zR4a3KPjap8uYQOnqSkeY1hk07aXsw=="],
+    "@ozmos/vite-plugin-viper": ["@ozmos/vite-plugin-viper@0.3.0", "", { "dependencies": { "@types/node": "^22.15.19", "typescript": "^5.8.3", "vite": "^6.3.5" } }, "sha512-CeiAt6pnG3tOiXDpP9K0pPD5FK815+Yq9lHkYikIglZ4D0i8Ew9THu1xUkm0TtcpQwZ4XjvTHkyfqO8Kat0stg=="],
 
     "@prettier/plugin-php": ["@prettier/plugin-php@0.22.4", "", { "dependencies": { "linguist-languages": "^7.27.0", "php-parser": "^3.1.5" }, "peerDependencies": { "prettier": "^3.0.0" } }, "sha512-uZWqfyrwsxScIYkmVcfnoQGFmKVMXTHD5pqYT4l8fxzm5P3XY94hTPbf8X6TFCi2QTZBIot7GS8lfIjQjldc2g=="],
 
